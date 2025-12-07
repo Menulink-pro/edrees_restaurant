@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>مطعم إدريس الشعبي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header class="header">
+    <div class="logo-box">
+      <img id="storeLogo" src="" alt="شعار المطعم" />
+    </div>
+    <h1 id="storeName" class="store-name"></h1>
+  </header>
+
+  <!-- أقسام المنيو (عرضي) -->
+  <nav class="category-tabs" id="categoryTabs"></nav>
+
+  <!-- قائمة الأصناف -->
+  <main class="menu" id="menuList"></main>
+
+  <!-- شريط السلة -->
+  <footer class="cart-bar hidden" id="cartBar">
+    <div class="cart-info">
+      <span class="cart-label">ملخص الطلب</span>
+      <span class="cart-total" id="cartTotal">0 ريال</span>
+    </div>
+    <button class="cart-open-btn" id="openCartBtn">عرض السلة</button>
+  </footer>
+
+  <!-- Bottom Sheet المنتج -->
+  <div class="sheet-overlay" id="productSheetOverlay">
+    <div class="sheet" id="productSheet">
+      <div class="sheet-header">
+        <span id="sheetProductName">اسم الصنف</span>
+        <span id="sheetProductPrice">0 ريال</span>
+      </div>
+
+      <textarea id="sheetNote" class="sheet-note"
+        placeholder="ملاحظات (اختياري): بدون دهن – حار قليل – زيادة هريس ..."></textarea>
+
+      <div class="sheet-qty-row">
+        <button class="qty-arrow" id="qtyMinus">−</button>
+        <span id="sheetQty">1</span>
+        <button class="qty-arrow" id="qtyPlus">+</button>
+      </div>
+
+      <button class="sheet-add-btn" id="addToCartBtn">أضف للسلة</button>
+      <button class="sheet-close" id="closeProductSheet">إغلاق</button>
+    </div>
+  </div>
+
+  <!-- Bottom Sheet السلة -->
+  <div class="sheet-overlay" id="cartSheetOverlay">
+    <div class="sheet sheet-cart">
+      <div class="sheet-cart-header">
+        <span>ملخص الطلب</span>
+        <button class="sheet-close-x" id="closeCartSheet">×</button>
+      </div>
+
+      <div class="cart-items" id="cartItemsList"></div>
+
+      <!-- إدخال اسم + رقم العميل -->
+      <div class="customer-box">
+        <input type="text" id="customerName" placeholder="اسم العميل (اختياري)">
+        <input type="tel" id="customerPhone" placeholder="رقم الجوال (مثال: 0551234567)">
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>الإجمالي:</span>
+          <span id="cartTotalBottom">0 ريال</span>
+        </div>
+        <button class="whatsapp-btn" id="sendWhatsappBtn">إرسال الطلب عبر الواتساب</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- الفوتر التعريفي -->
+  <footer class="dev-footer">
+────────────────────  
+MenuLink © 2025  
+📞 0593937921  
+────────────────────
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
