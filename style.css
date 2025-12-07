@@ -358,3 +358,21 @@ textarea {
   padding: 12px 22px;
   border-radius: 12px;
 }
+/* === شكل زر الحذف (X) في السلة === */
+.cart-remove {
+  background: transparent;
+  border: none;
+  color: #ef4444;          /* أحمر واضح */
+  font-size: 22px;        /* أكبر شوي */
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  line-height: 1;
+}
+/* === منع زوم الآيفون نهائيًا عند الكتابة === */
+input,
+textarea,
+select {
+  font-size: 16px !important;
+  transform: translateZ(0);
+}
