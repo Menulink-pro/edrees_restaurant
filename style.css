@@ -376,3 +376,59 @@ select {
   font-size: 16px !important;
   transform: translateZ(0);
 }
+/* === زر حذف الصنف (X) - أحمر === */
+.cart-remove {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  border: 1px solid #fecaca;
+  background: #fee2e2;
+  color: #b91c1c;            /* X أحمر */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0;
+  margin-left: 6px;
+  cursor: pointer;
+  line-height: 1;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  transition: all 0.15s ease;
+}
+
+.cart-remove:hover {
+  background: #ef4444;
+  color: #ffffff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  transform: translateY(-1px);
+}
+
+/* === زر إغلاق الشيت / السلة - أزرق === */
+.sheet-close,
+.sheet-close-x {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;           /* X أزرق */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  transition: all 0.15s ease;
+}
+
+.sheet-close:hover,
+.sheet-close-x:hover {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  transform: translateY(-1px);
+}
